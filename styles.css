@@ -51,7 +51,7 @@ nav a:hover{color:var(--clr-accent);}
 
 /* Social icons */
 .social{display:flex;align-items:center;gap:.75rem;}
-.social img{width:18px;height:18px;object-fit:contain;filter:grayscale(1);}
+.social img{width:28px;height:28px;object-fit:contain;filter:grayscale(1);}
 
 /* ---------- Hero ---------- */
 .hero{
