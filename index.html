@@ -16,13 +16,26 @@
   <!-- ---------- Header ---------- -->
   <header>
     <div class="container">
+      <!-- לוגו – יופיע בקצה הימני (RTL) -->
       <img class="logo" src="images/logo.png" alt="">
+      
+      <!-- ניווט ראשי -->
       <nav>
         <a href="#home">בית</a>
         <a href="#menu">תפריט</a>
         <a href="#about">עלינו</a>
         <a href="#contact">צור קשר</a>
       </nav>
+
+      <!-- אייקוני רשתות חברתיות -->
+      <div class="social">
+        <a href="https://www.instagram.com/sapircakes_" target="_blank" aria-label="Instagram">
+          <img src="images/instagram symbol black white.png" alt="">
+        </a>
+        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank" aria-label="Facebook">
+          <img src="images/facebook symbol black white.png" alt="">
+        </a>
+      </div>
     </div>
   </header>
 
@@ -40,7 +53,6 @@
     <h2>התפריט שלנו</h2>
 
     <div class="tabs">
-
       <!-- Tabs (radio) -->
       <input id="tab-workshops" type="radio" name="tabs" checked>
       <label for="tab-workshops">סדנאות</label>
@@ -54,7 +66,7 @@
       <input id="tab-cheese" type="radio" name="tabs">
       <label for="tab-cheese">עוגות גבינה</label>
 
-      <!-- ---------- Workshops ---------- -->
+      <!-- ---------- תוכן הכרטיסיות (לא שונה) ---------- -->
       <div class="tab-content" id="content-workshops">
         <div class="grid">
           <figure class="card"><a href="#modal-cupcakes"><img src="images/placeholder.jpg" alt=""><figcaption>קאפקייקס</figcaption></a></figure>
@@ -63,7 +75,6 @@
         </div>
       </div>
 
-      <!-- ---------- Decor Cakes ---------- -->
       <div class="tab-content" id="content-decor">
         <div class="grid">
           <figure class="card"><a href="#modal-bento-decor"><img src="images/placeholder.jpg" alt=""><figcaption>בנטו</figcaption></a></figure>
@@ -75,7 +86,6 @@
         </div>
       </div>
 
-      <!-- ---------- Tarts ---------- -->
       <div class="tab-content" id="content-tarts">
         <div class="grid">
           <figure class="card"><a href="#modal-tart-choco"><img src="images/placeholder.jpg" alt=""><figcaption>טארט שוקולד</figcaption></a></figure>
@@ -88,7 +98,6 @@
         </div>
       </div>
 
-      <!-- ---------- Cheese Cakes ---------- -->
       <div class="tab-content" id="content-cheese">
         <div class="grid">
           <figure class="card"><a href="#modal-cheese-tall"><img src="images/ogat gvina.jpg" alt=""><figcaption>עוגת גבינה גבוהה</figcaption></a></figure>
@@ -115,24 +124,33 @@
   <!-- ---------- Contact ---------- -->
   <section id="contact" class="contact-section">
     <div class="container narrow">
+
       <h2>צרו קשר</h2>
-      <h1>ספיר שמש</h1>
-      <p>🧁קונדיטורית, בוגרת אסטלה כיתת אומן</p>
-      <p>🎂מעצבת עוגות</p>
-      <p>👇🏽לפרטים והזמנות👇🏽</p>
-      <p>טל׳ – <a href="tel:+972585556624">058-555-6624</a></p>
-      <p>איסוף מחולון📍</p>
-      <p>
-        :מוזמנים לעקוב
-        אינסטגרם – <a href="https://www.instagram.com/sapircakes_" target="_blank">@sapircakes_</a><br>
-        פייסבוק – <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank">Sapir Cakes</a>
-      </p>
+
+      <h3 class="owner-name">ספיר שמש</h3>
+
+      <ul class="contact-list">
+        <li>🧁 קונדיטורית, בוגרת אסטלה כיתת אומן</li>
+        <li>🎂 מעצבת עוגות</li>
+        <li>טל׳ – <a href="tel:+972585556624">058-555-6624</a></li>
+        <li>איסוף מחולון 📍</li>
+      </ul>
+
+      <div class="contact-social">
+        <a href="https://www.instagram.com/sapircakes_" target="_blank">
+          <img src="images/instagram symbol black white.png" alt="">@sapircakes_
+        </a>
+        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank">
+          <img src="images/facebook symbol black white.png" alt="">Sapir Cakes
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- ---------- Footer ---------- -->
   <footer>
-    <small>© 2025 Sapir’s Cakes | נוצר ע״י רון מרום 058-498-0222</small>
+    <small>© 2025 Sapir’s Cakes&nbsp;| נוצר ע״י רון מרום 058-498-0222</small>
   </footer>
 
   <!-- ========================================================= -->
