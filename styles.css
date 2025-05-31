@@ -51,7 +51,7 @@ nav a:hover{color:var(--clr-accent);}
 
 /* Social icons */
 .social{display:flex;align-items:center;gap:.75rem;}
-.social img{width:28px;height:28px;object-fit:contain;filter:grayscale(1);}
+.social img{width:40px;height:40px;object-fit:contain;filter:grayscale(1);}
 
 /* ---------- Hero ---------- */
 .hero{
@@ -147,7 +147,7 @@ nav a:hover{color:var(--clr-accent);}
   text-decoration:none;
   color:var(--clr-dark);
 }
-.contact-social img{width:18px;height:18px;object-fit:contain;filter:grayscale(1);}
+.contact-social img{width:30px;height:30px;object-fit:contain;filter:grayscale(1);}
 
 /* ---------- Footer ---------- */
 footer{
@@ -183,5 +183,5 @@ footer{
   .hero p{font-size:1.05rem;}
   .tabs label{padding:.4rem .9rem;font-size:.875rem;}
   .card{width:160px;}
-  .social img{width:18px;height:18px;}
+  .social img{width:40px;height:40px;}
 }
