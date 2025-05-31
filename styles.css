@@ -21,7 +21,7 @@ body{
 }
 img{max-width:100%;display:block;}
 
-/* ---------- Header / Layout ---------- */
+/* ---------- Layout / Header ---------- */
 .container{
   width:min(90%,1100px);
   margin-inline:auto;
@@ -32,9 +32,7 @@ img{max-width:100%;display:block;}
 .container.narrow{width:min(90%,800px);display:block;}
 
 header{
-  position:sticky;
-  top:0;
-  z-index:999;
+  position:sticky;top:0;z-index:999;
   background:var(--clr-light);
   box-shadow:0 2px 4px rgba(0,0,0,.05);
   padding-block:.4rem;
@@ -51,27 +49,9 @@ nav a{
 }
 nav a:hover{color:var(--clr-accent);}
 
-/* ---------- NEW: Social icons in header ---------- */
-.social{
-  display:flex;
-  align-items:center;
-  gap:.75rem;
-}
-/* אייקונים בראש העמוד */
-.social img{
-  width:25px;          /* היה 24px */
-  height:25px;
-  object-fit:contain;
-  filter:grayscale(1);
-}
-
-/* אותו גודל גם בתחתית */
-.contact-social img{
-  width:18px;          /* היה 20px */
-  height:18px;
-  object-fit:contain;
-  filter:grayscale(1);
-}
+/* Social icons */
+.social{display:flex;align-items:center;gap:.75rem;}
+.social img{width:18px;height:18px;object-fit:contain;filter:grayscale(1);}
 
 /* ---------- Hero ---------- */
 .hero{
@@ -129,7 +109,7 @@ nav a:hover{color:var(--clr-accent);}
 #tab-tarts:checked~#content-tarts,
 #tab-cheese:checked~#content-cheese{display:block;}
 
-/* ---------- Product Cards ---------- */
+/* ---------- Cards ---------- */
 .grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;}
 
 .card{
@@ -152,11 +132,7 @@ nav a:hover{color:var(--clr-accent);}
 
 /* contact formatting */
 .owner-name{margin-top:0;}
-.contact-list{
-  list-style:none;
-  padding:0;
-  margin:0 0 1rem;
-}
+.contact-list{list-style:none;padding:0;margin:0 0 1rem;}
 .contact-list li{margin-bottom:.25rem;}
 
 .contact-social{
@@ -171,7 +147,7 @@ nav a:hover{color:var(--clr-accent);}
   text-decoration:none;
   color:var(--clr-dark);
 }
-.contact-social img{width:20px;height:20px;object-fit:contain;filter:grayscale(1);}
+.contact-social img{width:18px;height:18px;object-fit:contain;filter:grayscale(1);}
 
 /* ---------- Footer ---------- */
 footer{
@@ -207,5 +183,5 @@ footer{
   .hero p{font-size:1.05rem;}
   .tabs label{padding:.4rem .9rem;font-size:.875rem;}
   .card{width:160px;}
-  .social img{width:20px;height:20px;}
+  .social img{width:18px;height:18px;}
 }
