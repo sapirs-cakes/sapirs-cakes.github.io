@@ -1,0 +1,187 @@
+/* ---------- Vars ---------- */
+:root {
+  --clr-primary: #fff4f6;
+  --clr-accent : #ff6e8c;
+  --clr-dark   : #2f2f2f;
+  --clr-light  : #ffffff;
+  --radius     : 20px;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: var(--clr-dark);
+  background: var(--clr-light);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ---------- Layout ---------- */
+.container        { width: min(90%, 1100px); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; }
+.container.narrow { width: min(90%, 800px);  margin-inline: auto; display: block; }
+
+header {
+  position: sticky; top: 0; z-index: 999;
+  background: var(--clr-light);
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  padding-block: .4rem;
+}
+
+/* Logo */
+.logo {
+  height: 90px;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.12));
+}
+
+/* Nav */
+nav a {
+  margin-inline: .75rem;
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: 600;
+  transition: color .25s;
+}
+nav a:hover { color: var(--clr-accent); }
+
+/* ---------- Hero ---------- */
+.hero {
+  height: 80vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--clr-light);
+  position: relative;
+}
+.hero::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+.hero-content { position: relative; z-index: 1; }
+.hero h1 { font-size: clamp(2.6rem,5vw+1rem,4.2rem); margin: 0; }
+.hero p  { font-size: 1.3rem; margin-block: .5rem 1.75rem; }
+
+.btn {
+  display: inline-block;
+  padding: .75rem 2.6rem;
+  background: var(--clr-accent);
+  color: var(--clr-light);
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .25s;
+}
+.btn:hover { opacity: .9; }
+
+/* ---------- Menu & Tabs ---------- */
+.menu-section { padding-block: 4rem; background: var(--clr-primary); }
+.menu-section h2 { text-align: center; margin-bottom: 2rem; font-size: 2.4rem; }
+
+.tabs { width: min(95%, 1200px); margin-inline: auto; }
+.tabs input[type="radio"] { display: none; }
+
+.tabs label {
+  cursor: pointer;
+  padding: .6rem 1.4rem;
+  border: 2px solid var(--clr-accent);
+  border-radius: var(--radius);
+  margin-left: .25rem;
+  font-weight: 600;
+  transition: background .25s, color .25s;
+}
+.tabs input:checked + label { background: var(--clr-accent); color: var(--clr-light); }
+
+.tab-content { display: none; padding-top: 2rem; }
+
+#tab-workshops:checked ~ #content-workshops,
+#tab-decor:checked     ~ #content-decor,
+#tab-tarts:checked     ~ #content-tarts,
+#tab-cheese:checked    ~ #content-cheese { display: block; }
+
+/* ---------- Grid ---------- */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;  /* מרכז שורות חלקיות */
+}
+
+.card {
+  width: 210px;
+  background: var(--clr-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  transition: transform .25s;
+}
+.card:hover { transform: translateY(-4px); }
+
+.card a { text-decoration: none; color: inherit; display: block; }
+.card img { height: 180px; object-fit: cover; }
+.card figcaption { padding: 1rem; text-align: center; font-weight: 500; line-height: 1.4; }
+
+/* ---------- Sections ---------- */
+.about-section,
+.contact-section { padding-block: 4rem; }
+.contact-section { background: var(--clr-primary); }
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  padding-block: 1rem;
+  font-size: .875rem;
+}
+
+/* ---------- Modal (CSS-only) ---------- */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  display: none;              /* מוסתר כברירת-מחדל */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  background: var(--clr-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  overflow: auto;
+  transform: scale(.8);
+  transition: transform .3s ease, opacity .3s ease;
+  opacity: 0;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: .7rem; left: .7rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.modal:target { display: flex; }
+.modal:target .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:600px){
+  nav a      { margin-inline: .4rem; font-size: .875rem; }
+  .hero p    { font-size: 1.05rem; }
+  .tabs label{ padding: .4rem .9rem; font-size: .875rem; }
+  .card      { width: 160px; }
+}
