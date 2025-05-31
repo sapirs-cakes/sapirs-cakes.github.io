@@ -57,7 +57,21 @@ nav a:hover{color:var(--clr-accent);}
   align-items:center;
   gap:.75rem;
 }
-.social img{width:24px;height:24px;object-fit:contain;filter:grayscale(1);}
+/* אייקונים בראש העמוד */
+.social img{
+  width:18px;          /* היה 24px */
+  height:18px;
+  object-fit:contain;
+  filter:grayscale(1);
+}
+
+/* אותו גודל גם בתחתית */
+.contact-social img{
+  width:18px;          /* היה 20px */
+  height:18px;
+  object-fit:contain;
+  filter:grayscale(1);
+}
 
 /* ---------- Hero ---------- */
 .hero{
