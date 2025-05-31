@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Sapir’s Cakes | פטיסרי בוטיק</title>
 
+  <!-- Favicon  -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,10 +19,8 @@
   <!-- ---------- Header ---------- -->
   <header>
     <div class="container">
-      <!-- לוגו – יופיע בקצה הימני (RTL) -->
-      <img class="logo" src="images/logo.png" alt="">
-      
-      <!-- ניווט ראשי -->
+      <img class="logo" src="images/logo.png" alt="לוגו ספיר'ס קייקס">
+
       <nav>
         <a href="#home">בית</a>
         <a href="#menu">תפריט</a>
@@ -27,7 +28,7 @@
         <a href="#contact">צור קשר</a>
       </nav>
 
-      <!-- אייקוני רשתות חברתיות -->
+      <!-- Social icons -->
       <div class="social">
         <a href="https://www.instagram.com/sapircakes_" target="_blank" aria-label="Instagram">
           <img src="images/instagram symbol black white.png" alt="">
@@ -53,7 +54,6 @@
     <h2>התפריט שלנו</h2>
 
     <div class="tabs">
-      <!-- Tabs (radio) -->
       <input id="tab-workshops" type="radio" name="tabs" checked>
       <label for="tab-workshops">סדנאות</label>
 
@@ -66,7 +66,8 @@
       <input id="tab-cheese" type="radio" name="tabs">
       <label for="tab-cheese">עוגות גבינה</label>
 
-      <!-- ---------- תוכן הכרטיסיות (לא שונה) ---------- -->
+      <!-- ------- Tab contents (לא שונה) ------- -->
+      <!-- Workshops -->
       <div class="tab-content" id="content-workshops">
         <div class="grid">
           <figure class="card"><a href="#modal-cupcakes"><img src="images/placeholder.jpg" alt=""><figcaption>קאפקייקס</figcaption></a></figure>
@@ -75,6 +76,7 @@
         </div>
       </div>
 
+      <!-- Decor cakes (unchanged)... -->
       <div class="tab-content" id="content-decor">
         <div class="grid">
           <figure class="card"><a href="#modal-bento-decor"><img src="images/placeholder.jpg" alt=""><figcaption>בנטו</figcaption></a></figure>
@@ -86,6 +88,7 @@
         </div>
       </div>
 
+      <!-- Tarts -->
       <div class="tab-content" id="content-tarts">
         <div class="grid">
           <figure class="card"><a href="#modal-tart-choco"><img src="images/placeholder.jpg" alt=""><figcaption>טארט שוקולד</figcaption></a></figure>
@@ -98,6 +101,7 @@
         </div>
       </div>
 
+      <!-- Cheese cakes -->
       <div class="tab-content" id="content-cheese">
         <div class="grid">
           <figure class="card"><a href="#modal-cheese-tall"><img src="images/ogat gvina.jpg" alt=""><figcaption>עוגת גבינה גבוהה</figcaption></a></figure>
@@ -124,7 +128,6 @@
   <!-- ---------- Contact ---------- -->
   <section id="contact" class="contact-section">
     <div class="container narrow">
-
       <h2>צרו קשר</h2>
 
       <h3 class="owner-name">ספיר שמש</h3>
@@ -140,19 +143,18 @@
         <a href="https://www.instagram.com/sapircakes_" target="_blank">
           <img src="images/instagram symbol black white.png" alt="">@sapircakes_
         </a>
-        <a href="https://www.facebook.com/sapircakes_" target="_blank">
-          <img src="images/facebook symbol black white.png" alt="">sapircakes_
+        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank">
+          <img src="images/facebook symbol black white.png" alt="">Sapir Cakes
         </a>
       </div>
-
     </div>
   </section>
 
   <!-- ---------- Footer ---------- -->
   <footer>
-    <small>© 2025 Sapir’s Cakes&nbsp;| נוצר ע״י רון מרום 058-498-0222</small>
+    <small>© 2025 Sapir’s Cakes | נוצר ע״י רון מרום 058-498-0222</small>
   </footer>
-
+  
   <!-- ========================================================= -->
   <!-- ===================   MODALS (CSS-ONLY)   =============== -->
   <!-- ========================================================= -->
