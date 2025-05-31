@@ -179,9 +179,26 @@ footer{
 
 /* ---------- Responsive ---------- */
 @media(max-width:600px){
-  nav a{margin-inline:.4rem;font-size:.875rem;}
-  .hero p{font-size:1.05rem;}
-  .tabs label{padding:.4rem .9rem;font-size:.875rem;}
-  .card{width:160px;}
-  .social img{width:40px;height:40px;}
+  /* ניווט מתקפל למספר שורות */
+  nav{
+    flex-wrap:wrap;           /* אם אין מקום – יורד שורה */
+    justify-content:center;
+    row-gap:.25rem;
+  }
+  nav a{
+    margin-inline:.3rem;
+    font-size:.8rem;
+  }
+
+  /* לוגו ואייקונים מוקטנים */
+  .logo{height:70px;}
+  .social img{width:24px;height:24px;}
+
+  /* כותרת וגופנים מעט קטנים יותר */
+  .hero p{font-size:.95rem;}
+
+  /* כפתורי הטאב והכרטיסים */
+  .tabs label{padding:.35rem .8rem;font-size:.8rem;}
+  .card{width:150px;}
 }
+
