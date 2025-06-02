@@ -41,7 +41,6 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .menu-section{padding-block:4rem;background:var(--clr-primary);}
 .menu-section h2{text-align:center;margin-bottom:2rem;font-size:2.4rem;}
 
-.tabs::-webkit-scrollbar{display:none;}
 .tabs input{display:none;}
 .tabs label{cursor:pointer;padding:.6rem 1.4rem;border:2px solid var(--clr-accent);border-radius:var(--radius);font-weight:600;transition:.25s;}
 .tabs input:checked+label{background:var(--clr-accent);color:#fff;}
@@ -66,9 +65,6 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
   border-radius: 10px;
 }
 
-.tabs::-webkit-scrollbar {
-  display: none;
-}
 
 .tabs label {
   flex: 0 0 auto;
