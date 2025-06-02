@@ -1,728 +1,470 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+
+<html dir="rtl" lang="he">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Sapir’s Cakes | פטיסרי בוטיק</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-
-  <!-- Google Fonts + CSS -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Sapir’s Cakes | פטיסרי בוטיק</title>
+<!-- Favicon -->
+<link href="favicon.png" rel="icon" sizes="70x140" type="image/png"/>
+<link href="favicon.ico" rel="shortcut icon"/>
+<!-- Google Fonts + CSS -->
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
-
 <body>
-
-  <!-- ---------- Header ---------- -->
-  <header>
-    <div class="container">
-      <img class="logo" src="images/logo.png" alt="לוגו">
-      <nav>
-        <a href="#home">בית</a>
-        <a href="#menu">תפריט</a>
-        <a href="#about">עלינו</a>
-        <a href="#contact">צרו קשר</a>
-      </nav>
-      <div class="social">
-        <a href="https://www.instagram.com/sapircakes_" target="_blank"><img src="images/instagram symbol black white.png" alt=""></a>
-        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img src="images/facebook symbol black white.png" alt=""></a>
-      </div>
-    </div>
-  </header>
-
-  <!-- ---------- Hero ---------- -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Sapir’s Cakes</h1>
-      <p>חוויה מתוקה בכל ביס</p>
-      <a class="btn btn-whatsapp" href="https://wa.me/972585556624" target="_blank">
-        <img src="images/whatsapp.png" alt=""> הזמנה ב-WhatsApp
+<!-- ---------- Header ---------- -->
+<header>
+<div class="container">
+<img alt="לוגו" class="logo" src="images/logo.png"/>
+<nav>
+<a href="#home">בית</a>
+<a href="#menu">תפריט</a>
+<a href="#about">עלינו</a>
+<a href="#contact">צרו קשר</a>
+</nav>
+<div class="social">
+<a href="https://www.instagram.com/sapircakes_" target="_blank"><img alt="" src="images/instagram symbol black white.png"/></a>
+<a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img alt="" src="images/facebook symbol black white.png"/></a>
+</div>
+</div>
+</header>
+<!-- ---------- Hero ---------- -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Sapir’s Cakes</h1>
+<p>חוויה מתוקה בכל ביס</p>
+<a class="btn btn-whatsapp" href="https://wa.me/972585556624" target="_blank">
+<img alt="" src="images/whatsapp.png"/> הזמנה ב-WhatsApp
       </a>
-    </div>
-  </section>
-
-  <!-- ---------- Menu ---------- -->
-  <section id="menu" class="menu-section">
-    <h2>התפריט שלנו</h2>
-
-    <div class="tabs">
-      <input id="tab-workshops" type="radio" name="tabs" checked><label for="tab-workshops">סדנאות</label>
-      <input id="tab-decor"     type="radio" name="tabs"><label for="tab-decor">עוגות מעוצבות</label>
-      <input id="tab-tarts"     type="radio" name="tabs"><label for="tab-tarts">טארטים</label>
-      <input id="tab-cheese"    type="radio" name="tabs"><label for="tab-cheese">עוגות גבינה</label>
-
-      <!-- ---------- Workshops ---------- -->
-      <div class="tab-content" id="content-workshops">
-        <div class="grid">
-          <figure class="card">
-            <a href="#modal-cupcakes">
-              <img src="images/cupcakes.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>קאפקייקס</h4>
-                <p class="desc">וניל, קרם חמאה ופירות יער.</p>
-                <p class="allergy">גלוטן, ביצים, חלב</p>
-                <span class="price">₪15</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-bento-workshop">
-              <img src="images/bento-workshop.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>בנטו</h4>
-                <p class="desc">עוגת מיני אישית בקופסה.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪55</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-beginners-cakes">
-              <img src="images/beginners-cakes.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>עוגות מעוצבות למתחילים</h4>
-                <p class="desc">סדנת ציפוי וזילוף.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪220</span>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-
-      <!-- ---------- Decor Cakes ---------- -->
-      <div class="tab-content" id="content-decor">
-        <div class="grid">
-          <figure class="card">
-            <a href="#modal-bento-decor">
-              <img src="images/bento-decor.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>בנטו</h4>
-                <p class="desc">עוגת מיני מעוצבת.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪55</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-mini-cakes">
-              <img src="images/mini-cakes.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>עוגות מיני</h4>
-                <p class="desc">הגשה אישית מושלמת.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪35</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-garden-cakes">
-              <img src="images/garden-cakes.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>עוגות גן</h4>
-                <p class="desc">עיצוב פרחוני קסום.</p>
-                <p class="allergy">גלוטן, ביצים</p>
-                <span class="price">₪180</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-decor-1tier">
-              <img src="images/decor-1tier.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>עוגה קומה 1</h4>
-                <p class="desc">לאירוע קטן.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪220</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-decor-2tier">
-              <img src="images/decor-2tier.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>עוגה 2 קומות</h4>
-                <p class="desc">אפקט “וואו”.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪380</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-vintage-cake">
-              <img src="images/vintage-cake.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>וינטג׳</h4>
-                <p class="desc">עיצוב נוסטלגי.</p>
-                <p class="allergy">גלוטן, ביצים</p>
-                <span class="price">₪260</span>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-
-      <!-- ---------- Tarts ---------- -->
-      <div class="tab-content" id="content-tarts">
-        <div class="grid">
-          <figure class="card">
-            <a href="#modal-tart-choco">
-              <img src="images/tart-choco.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>טארט שוקולד</h4>
-                <p class="desc">70 % קקאו.</p>
-                <p class="allergy">גלוטן, חלב</p>
-                <span class="price">₪140</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-tart-flan">
-              <img src="images/tart-flan.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>טארט פלאן</h4>
-                <p class="desc">קלאסיקה קרמית.</p>
-                <p class="allergy">גלוטן, ביצים</p>
-                <span class="price">₪130</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-pie-almond">
-              <img src="images/tart-shkedim.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>טארט שקדים</h4>
-                <p class="desc">קרם פרנג׳יפאן.</p>
-                <p class="allergy">שקדים</p>
-                <span class="price">₪140</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-pie-pecan">
-              <img src="images/pie-pecan.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>פאי פקאן</h4>
-                <p class="desc">ריבת פקאן עשירה.</p>
-                <p class="allergy">אגוזים</p>
-                <span class="price">₪150</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-tart-noir">
-              <img src="images/tart-noir.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>טארט נואר</h4>
-                <p class="desc">שוקולד שחור.</p>
-                <p class="allergy">גלוטן</p>
-                <span class="price">₪150</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-tart-lemon">
-              <img src="images/tart-lemon.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>טארט לימון</h4>
-                <p class="desc">מרנג קלוי.</p>
-                <p class="allergy">גלוטן, ביצים</p>
-                <span class="price">₪135</span>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-
-      <!-- ---------- Cheese cakes ---------- -->
-      <div class="tab-content" id="content-cheese">
-        <div class="grid">
-          <figure class="card">
-            <a href="#modal-cheese-tall">
-              <img src="images/ogat gvina.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>גבינה גבוהה</h4>
-                <p class="desc">ניו-יורק סטייל.</p>
-                <p class="allergy">חלב, ביצים</p>
-                <span class="price">₪160</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-cheese-flavors">
-              <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>גבינה בטעמים</h4>
-                <p class="desc">פיסטוק/קרמל ועוד.</p>
-                <p class="allergy">חלב, אגוזים</p>
-                <span class="price">₪170</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-cheese-loaf">
-              <img src="images/pas gvina.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>פס גבינה</h4>
-                <p class="desc">פרוסות להגשה.</p>
-                <p class="allergy">חלב</p>
-                <span class="price">₪120</span>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="card">
-            <a href="#modal-cheese-cold">
-              <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-              <figcaption>
-                <h4>גבינה קרה</h4>
-                <p class="desc">בסיס ביסקוויט.</p>
-                <p class="allergy">חלב, גלוטן</p>
-                <span class="price">₪140</span>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- About ---------- -->
-<section id="about" class="about-section">
-  <div class="about-flex container narrow">
-    <!-- התמונה – תהיה בצד שמאל בגלל row-reverse -->
-    <div class="about-img-wrapper">
-      <img class="about-img" src="images/sapir.jpg" alt="ספיר שמש" onerror="this.src='images/placeholder.jpg'">
-    </div>
-    <!-- הטקסט – יהיה בצד ימין -->
-    <div class="about-text">
-      <h2>על Sapir’s Cakes</h2>
-      <p>קוראים לי <strong>ספיר שמש</strong>, קונדיטורית בוגרת “אסטלה – כיתת אומן”.  
-         אני מאמינה בשילוב מושלם בין אומנות, טעם וחומרי-גלם איכותיים – כך שכל ביס הוא סיפור אהבה.</p>
-    </div>
-  </div>
+</div>
 </section>
-
-  <!-- ---------- Contact ---------- -->
-  <section id="contact" class="contact-section">
-    <div class="container narrow">
-      <h2>צרו קשר</h2>
-      <h3 class="owner-name">ספיר שמש</h3>
-      <ul class="contact-list">
-        <li>טל׳ – <a href="tel:+972585556624">058-555-6624</a></li>
-        <li>איסוף מחולון 📍</li>
-      </ul>
-      <div class="contact-social">
-        <a href="https://wa.me/972585556624" target="_blank"><img src="images/whatsapp.png" alt="">WhatsApp</a>
-        <a href="https://www.instagram.com/sapircakes_" target="_blank"><img src="images/instagram symbol black white.png" alt="">@sapircakes_</a>
-        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img src="images/facebook symbol black white.png" alt="">Sapir Cakes</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- Testimonials ---------- -->
-  <section class="testimonials">
-    <h2>מה הלקוחות אומרים</h2>
-    <div class="screens">
-      <figure><img src="images/chat1.png" onerror="this.src='images/placeholder.jpg'" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
-      <figure><img src="images/chat2.png" onerror="this.src='images/placeholder.jpg'" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
-      <figure><img src="images/chat3.png" onerror="this.src='images/placeholder.jpg'" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
-      <figure><img src="images/chat4.png" onerror="this.src='images/placeholder.jpg'" alt=""><figcaption class="stars">★★★★☆</figcaption></figure>
-      <figure><img src="images/chat5.png" onerror="this.src='images/placeholder.jpg'" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
-    </div>
-  </section>
-
-  <!-- ---------- Footer ---------- -->
-  <footer>
-    <small>© 2025 Sapir’s Cakes | רון מרום 058-498-0222</small>
-  </footer>
-
-  <!-- ========================================================= -->
-  <!-- =======================   MODALS   ======================= -->
-  <!-- ========================================================= -->
-
-  <!-- ============ Workshops (3) ============ -->
-  <!-- קאפקייקס -->
-  <div id="modal-cupcakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>קאפקייקס</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-cup" id="g-cup-1" checked>
-      <input type="radio" name="g-cup" id="g-cup-2">
-      <input type="radio" name="g-cup" id="g-cup-3">
-      <div class="big">
-        <img src="images/cupcakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-cup-1"><img src="images/cupcakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-cup-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-cup-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- בנטו – סדנה -->
-  <div id="modal-bento-workshop" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו – סדנה</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-bentows" id="g-bentows-1" checked>
-      <input type="radio" name="g-bentows" id="g-bentows-2">
-      <input type="radio" name="g-bentows" id="g-bentows-3">
-      <div class="big">
-        <img src="images/bento-workshop.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-bentows-1"><img src="images/bento-workshop.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-bentows-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-bentows-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- עוגות מעוצבות למתחילים -->
-  <div id="modal-beginners-cakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות מעוצבות למתחילים</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-beg" id="g-beg-1" checked>
-      <input type="radio" name="g-beg" id="g-beg-2">
-      <input type="radio" name="g-beg" id="g-beg-3">
-      <div class="big">
-        <img src="images/beginners-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-beg-1"><img src="images/beginners-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-beg-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-beg-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- ============ Decor (6) ============ -->
-  <!-- בנטו -->
-  <div id="modal-bento-decor" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-bentod" id="g-bentod-1" checked>
-      <input type="radio" name="g-bentod" id="g-bentod-2">
-      <input type="radio" name="g-bentod" id="g-bentod-3">
-      <div class="big">
-        <img src="images/bento-decor.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-bentod-1"><img src="images/bento-decor.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-bentod-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-bentod-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- עוגות מיני -->
-  <div id="modal-mini-cakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות מיני</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-mini" id="g-mini-1" checked>
-      <input type="radio" name="g-mini" id="g-mini-2">
-      <input type="radio" name="g-mini" id="g-mini-3">
-      <div class="big">
-        <img src="images/mini-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-mini-1"><img src="images/mini-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-mini-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-mini-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- עוגות גן -->
-  <div id="modal-garden-cakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות גן</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-garden" id="g-garden-1" checked>
-      <input type="radio" name="g-garden" id="g-garden-2">
-      <input type="radio" name="g-garden" id="g-garden-3">
-      <div class="big">
-        <img src="images/garden-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-garden-1"><img src="images/garden-cakes.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-garden-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-garden-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- קומה 1 -->
-  <div id="modal-decor-1tier" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגה קומה 1</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-1tier" id="g-1tier-1" checked>
-      <input type="radio" name="g-1tier" id="g-1tier-2">
-      <input type="radio" name="g-1tier" id="g-1tier-3">
-      <div class="big">
-        <img src="images/decor-1tier.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-1tier-1"><img src="images/decor-1tier.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-1tier-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-1tier-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- קומה 2 -->
-  <div id="modal-decor-2tier" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגה 2 קומות</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-2tier" id="g-2tier-1" checked>
-      <input type="radio" name="g-2tier" id="g-2tier-2">
-      <input type="radio" name="g-2tier" id="g-2tier-3">
-      <div class="big">
-        <img src="images/decor-2tier.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-2tier-1"><img src="images/decor-2tier.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-2tier-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-2tier-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- וינטג׳ -->
-  <div id="modal-vintage-cake" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>וינטג׳</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-vintage" id="g-vintage-1" checked>
-      <input type="radio" name="g-vintage" id="g-vintage-2">
-      <input type="radio" name="g-vintage" id="g-vintage-3">
-      <div class="big">
-        <img src="images/vintage-cake.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-vintage-1"><img src="images/vintage-cake.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-vintage-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-vintage-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- ============ Tarts (6) ============ -->
-  <!-- טארט שוקולד -->
-  <div id="modal-tart-choco" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט שוקולד</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-choco" id="g-choco-1" checked>
-      <input type="radio" name="g-choco" id="g-choco-2">
-      <input type="radio" name="g-choco" id="g-choco-3">
-      <div class="big">
-        <img src="images/tart-choco.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-choco-1"><img src="images/tart-choco.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-choco-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-choco-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- טארט פלאן -->
-  <div id="modal-tart-flan" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט פלאן</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-flan" id="g-flan-1" checked>
-      <input type="radio" name="g-flan" id="g-flan-2">
-      <input type="radio" name="g-flan" id="g-flan-3">
-      <div class="big">
-        <img src="images/tart-flan.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-flan-1"><img src="images/tart-flan.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-flan-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-flan-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- טארט שקדים -->
-  <div id="modal-pie-almond" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט שקדים</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-almond" id="g-almond-1" checked>
-      <input type="radio" name="g-almond" id="g-almond-2">
-      <input type="radio" name="g-almond" id="g-almond-3">
-      <div class="big">
-        <img src="images/tart-shkedim.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/tart-shkedim1.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/tart-shkedim2.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-almond-1"><img src="images/tart-shkedim.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-almond-2"><img src="images/tart-shkedim1.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-almond-3"><img src="images/tart-shkedim2.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- פאי פקאן -->
-  <div id="modal-pie-pecan" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>פאי פקאן</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-pecan" id="g-pecan-1" checked>
-      <input type="radio" name="g-pecan" id="g-pecan-2">
-      <input type="radio" name="g-pecan" id="g-pecan-3">
-      <div class="big">
-        <img src="images/pie-pecan.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-pecan-1"><img src="images/pie-pecan.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-pecan-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-pecan-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- טארט נואר -->
-  <div id="modal-tart-noir" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט נואר</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-noir" id="g-noir-1" checked>
-      <input type="radio" name="g-noir" id="g-noir-2">
-      <input type="radio" name="g-noir" id="g-noir-3">
-      <div class="big">
-        <img src="images/tart-noir.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-noir-1"><img src="images/tart-noir.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-noir-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-noir-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- טארט לימון -->
-  <div id="modal-tart-lemon" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט לימון</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-lemon" id="g-lemon-1" checked>
-      <input type="radio" name="g-lemon" id="g-lemon-2">
-      <input type="radio" name="g-lemon" id="g-lemon-3">
-      <div class="big">
-        <img src="images/tart-lemon.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-lemon-1"><img src="images/tart-lemon.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-lemon-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-lemon-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- ============ Cheese (4) ============ -->
-  <!-- גבוה -->
-  <div id="modal-cheese-tall" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה גבוהה</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-tall" id="g-tall-1" checked>
-      <input type="radio" name="g-tall" id="g-tall-2">
-      <input type="radio" name="g-tall" id="g-tall-3">
-      <div class="big">
-        <img src="images/ogat gvina.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-tall-1"><img src="images/ogat gvina.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-tall-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-tall-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- בטעמים -->
-  <div id="modal-cheese-flavors" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה בטעמים</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-flavor" id="g-flavor-1" checked>
-      <input type="radio" name="g-flavor" id="g-flavor-2">
-      <input type="radio" name="g-flavor" id="g-flavor-3">
-      <div class="big">
-        <img src="images/placeholder.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-flavor-1"><img src="images/placeholder.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-flavor-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-flavor-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- פס גבינה -->
-  <div id="modal-cheese-loaf" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>פס גבינה</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-loaf" id="g-loaf-1" checked>
-      <input type="radio" name="g-loaf" id="g-loaf-2">
-      <input type="radio" name="g-loaf" id="g-loaf-3">
-      <div class="big">
-        <img src="images/pas gvina.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-loaf-1"><img src="images/pas gvina.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-loaf-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-loaf-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
-  <!-- קרה -->
-  <div id="modal-cheese-cold" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה קרה</h3>
-    <div class="modal-gallery">
-      <input type="radio" name="g-cold" id="g-cold-1" checked>
-      <input type="radio" name="g-cold" id="g-cold-2">
-      <input type="radio" name="g-cold" id="g-cold-3">
-      <div class="big">
-        <img src="images/placeholder.jpg"  onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-        <img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt="">
-      </div>
-      <div class="thumbs">
-        <label for="g-cold-1"><img src="images/placeholder.jpg"  onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-cold-2"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-        <label for="g-cold-3"><img src="images/placeholder.jpg" onerror="this.src='images/placeholder.jpg'" alt=""></label>
-      </div>
-    </div>
-  </div></div>
-
+<!-- ---------- Menu ---------- -->
+<section class="menu-section" id="menu">
+<h2>התפריט שלנו</h2>
+<div class="tabs">
+<input checked="" id="tab-workshops" name="tabs" type="radio"/><label for="tab-workshops">סדנאות</label>
+<input id="tab-decor" name="tabs" type="radio"/><label for="tab-decor">עוגות מעוצבות</label>
+<input id="tab-tarts" name="tabs" type="radio"/><label for="tab-tarts">טארטים</label>
+<input id="tab-cheese" name="tabs" type="radio"/><label for="tab-cheese">עוגות גבינה</label>
+<!-- ---------- Workshops ---------- -->
+<div class="tab-content" id="content-workshops">
+<div class="grid">
+<figure class="card">
+<a href="#modal-cupcakes">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cupcakes.jpg"/>
+<figcaption>
+<h4>קאפקייקס</h4>
+<p class="desc">וניל, קרם חמאה ופירות יער.</p>
+<p class="allergy">גלוטן, ביצים, חלב</p>
+<span class="price">₪15</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-bento-workshop">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop.jpg"/>
+<figcaption>
+<h4>בנטו</h4>
+<p class="desc">עוגת מיני אישית בקופסה.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪55</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-beginners-cakes">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes.jpg"/>
+<figcaption>
+<h4>עוגות מעוצבות למתחילים</h4>
+<p class="desc">סדנת ציפוי וזילוף.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪220</span>
+</figcaption>
+</a>
+</figure>
+</div>
+</div>
+<!-- ---------- Decor Cakes ---------- -->
+<div class="tab-content" id="content-decor">
+<div class="grid">
+<figure class="card">
+<a href="#modal-bento-decor">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/bento-decor.jpg"/>
+<figcaption>
+<h4>בנטו</h4>
+<p class="desc">עוגת מיני מעוצבת.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪55</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-mini-cakes">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes.jpg"/>
+<figcaption>
+<h4>עוגות מיני</h4>
+<p class="desc">הגשה אישית מושלמת.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪35</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-garden-cakes">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes.jpg"/>
+<figcaption>
+<h4>עוגות גן</h4>
+<p class="desc">עיצוב פרחוני קסום.</p>
+<p class="allergy">גלוטן, ביצים</p>
+<span class="price">₪180</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-decor-1tier">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier.jpg"/>
+<figcaption>
+<h4>עוגה קומה 1</h4>
+<p class="desc">לאירוע קטן.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪220</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-decor-2tier">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier.jpg"/>
+<figcaption>
+<h4>עוגה 2 קומות</h4>
+<p class="desc">אפקט “וואו”.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪380</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-vintage-cake">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake.jpg"/>
+<figcaption>
+<h4>וינטג׳</h4>
+<p class="desc">עיצוב נוסטלגי.</p>
+<p class="allergy">גלוטן, ביצים</p>
+<span class="price">₪260</span>
+</figcaption>
+</a>
+</figure>
+</div>
+</div>
+<!-- ---------- Tarts ---------- -->
+<div class="tab-content" id="content-tarts">
+<div class="grid">
+<figure class="card">
+<a href="#modal-tart-choco">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-choco.jpg"/>
+<figcaption>
+<h4>טארט שוקולד</h4>
+<p class="desc">70 % קקאו.</p>
+<p class="allergy">גלוטן, חלב</p>
+<span class="price">₪140</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-tart-flan">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-flan.jpg"/>
+<figcaption>
+<h4>טארט פלאן</h4>
+<p class="desc">קלאסיקה קרמית.</p>
+<p class="allergy">גלוטן, ביצים</p>
+<span class="price">₪130</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-pie-almond">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim.jpg"/>
+<figcaption>
+<h4>טארט שקדים</h4>
+<p class="desc">קרם פרנג׳יפאן.</p>
+<p class="allergy">שקדים</p>
+<span class="price">₪140</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-pie-pecan">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan.jpg"/>
+<figcaption>
+<h4>פאי פקאן</h4>
+<p class="desc">ריבת פקאן עשירה.</p>
+<p class="allergy">אגוזים</p>
+<span class="price">₪150</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-tart-noir">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-noir.jpg"/>
+<figcaption>
+<h4>טארט נואר</h4>
+<p class="desc">שוקולד שחור.</p>
+<p class="allergy">גלוטן</p>
+<span class="price">₪150</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-tart-lemon">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon.jpg"/>
+<figcaption>
+<h4>טארט לימון</h4>
+<p class="desc">מרנג קלוי.</p>
+<p class="allergy">גלוטן, ביצים</p>
+<span class="price">₪135</span>
+</figcaption>
+</a>
+</figure>
+</div>
+</div>
+<!-- ---------- Cheese cakes ---------- -->
+<div class="tab-content" id="content-cheese">
+<div class="grid">
+<figure class="card">
+<a href="#modal-cheese-tall">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall.jpg"/>
+<figcaption>
+<h4>גבינה גבוהה</h4>
+<p class="desc">ניו-יורק סטייל.</p>
+<p class="allergy">חלב, ביצים</p>
+<span class="price">₪160</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-cheese-flavors">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors.jpg"/>
+<figcaption>
+<h4>גבינה בטעמים</h4>
+<p class="desc">פיסטוק/קרמל ועוד.</p>
+<p class="allergy">חלב, אגוזים</p>
+<span class="price">₪170</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-cheese-loaf">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf.jpg"/>
+<figcaption>
+<h4>פס גבינה</h4>
+<p class="desc">פרוסות להגשה.</p>
+<p class="allergy">חלב</p>
+<span class="price">₪120</span>
+</figcaption>
+</a>
+</figure>
+<figure class="card">
+<a href="#modal-cheese-cold">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold.jpg"/>
+<figcaption>
+<h4>גבינה קרה</h4>
+<p class="desc">בסיס ביסקוויט.</p>
+<p class="allergy">חלב, גלוטן</p>
+<span class="price">₪140</span>
+</figcaption>
+</a>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<!-- ---------- About ---------- -->
+<section class="about-section" id="about">
+<div class="about-flex container narrow">
+<!-- התמונה – תהיה בצד שמאל בגלל row-reverse -->
+<div class="about-img-wrapper">
+<img alt="ספיר שמש" class="about-img" onerror="this.src='images/placeholder.jpg'" src="images/sapir.jpg"/>
+</div>
+<!-- הטקסט – יהיה בצד ימין -->
+<div class="about-text">
+<h2>על Sapir’s Cakes</h2>
+<p>קוראים לי <strong>ספיר שמש</strong>, קונדיטורית בוגרת “אסטלה – כיתת אומן”.  
+         אני מאמינה בשילוב מושלם בין אומנות, טעם וחומרי-גלם איכותיים – כך שכל ביס הוא סיפור אהבה.</p>
+</div>
+</div>
+</section>
+<!-- ---------- Contact ---------- -->
+<section class="contact-section" id="contact">
+<div class="container narrow">
+<h2>צרו קשר</h2>
+<h3 class="owner-name">ספיר שמש</h3>
+<ul class="contact-list">
+<li>טל׳ – <a href="tel:+972585556624">058-555-6624</a></li>
+<li>איסוף מחולון 📍</li>
+</ul>
+<div class="contact-social">
+<a href="https://wa.me/972585556624" target="_blank"><img alt="" src="images/whatsapp.png"/>WhatsApp</a>
+<a href="https://www.instagram.com/sapircakes_" target="_blank"><img alt="" src="images/instagram symbol black white.png"/>@sapircakes_</a>
+<a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img alt="" src="images/facebook symbol black white.png"/>Sapir Cakes</a>
+</div>
+</div>
+</section>
+<!-- ---------- Testimonials ---------- -->
+<section class="testimonials">
+<h2>מה הלקוחות אומרים</h2>
+<div class="screens">
+<figure><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/chat1.png"/><figcaption class="stars">★★★★★</figcaption></figure>
+<figure><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/chat2.png"/><figcaption class="stars">★★★★★</figcaption></figure>
+<figure><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/chat3.png"/><figcaption class="stars">★★★★★</figcaption></figure>
+<figure><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/chat4.png"/><figcaption class="stars">★★★★☆</figcaption></figure>
+<figure><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/chat5.png"/><figcaption class="stars">★★★★★</figcaption></figure>
+</div>
+</section>
+<!-- ---------- Footer ---------- -->
+<footer>
+<small>© 2025 Sapir’s Cakes | רון מרום 058-498-0222</small>
+</footer>
+<!-- ========================================================= -->
+<!-- =======================   MODALS   ======================= -->
+<!-- ========================================================= -->
+<!-- ============ Workshops (3) ============ -->
+<!-- קאפקייקס -->
+<div class="modal" id="modal-cupcakes"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>קאפקייקס</h3>
+<div class="modal-gallery">
+<input checked="checked" id="cupcakes-1" name="slider-cupcakes" type="radio"/><input id="cupcakes-2" name="slider-cupcakes" type="radio"/><input id="cupcakes-3" name="slider-cupcakes" type="radio"/><div class="big"><img alt="cupcakes" onerror="this.src='images/placeholder.jpg'" src="images/cupcakes.jpg"/><img alt="cupcakes 1" onerror="this.src='images/placeholder.jpg'" src="images/cupcakes1.jpg"/><img alt="cupcakes 2" onerror="this.src='images/placeholder.jpg'" src="images/cupcakes2.jpg"/></div><div class="thumbs"><label for="cupcakes-1"><img onerror="this.src='images/placeholder.jpg'" src="images/cupcakes.jpg"/></label><label for="cupcakes-2"><img onerror="this.src='images/placeholder.jpg'" src="images/cupcakes1.jpg"/></label><label for="cupcakes-3"><img onerror="this.src='images/placeholder.jpg'" src="images/cupcakes2.jpg"/></label></div></div>
+</div></div>
+<!-- בנטו – סדנה -->
+<div class="modal" id="modal-bento-workshop"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו – סדנה</h3>
+<div class="modal-gallery">
+<input checked="checked" id="bento-workshop-1" name="slider-bento-workshop" type="radio"/><input id="bento-workshop-2" name="slider-bento-workshop" type="radio"/><input id="bento-workshop-3" name="slider-bento-workshop" type="radio"/><div class="big"><img alt="bento workshop" onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop.jpg"/><img alt="bento workshop 1" onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop1.jpg"/><img alt="bento workshop 2" onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop2.jpg"/></div><div class="thumbs"><label for="bento-workshop-1"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop.jpg"/></label><label for="bento-workshop-2"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop1.jpg"/></label><label for="bento-workshop-3"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-workshop2.jpg"/></label></div></div>
+</div></div>
+<!-- עוגות מעוצבות למתחילים -->
+<div class="modal" id="modal-beginners-cakes"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות מעוצבות למתחילים</h3>
+<div class="modal-gallery">
+<input checked="checked" id="beginners-cakes-1" name="slider-beginners-cakes" type="radio"/><input id="beginners-cakes-2" name="slider-beginners-cakes" type="radio"/><input id="beginners-cakes-3" name="slider-beginners-cakes" type="radio"/><div class="big"><img alt="beginners cakes" onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes.jpg"/><img alt="beginners cakes 1" onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes1.jpg"/><img alt="beginners cakes 2" onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes2.jpg"/></div><div class="thumbs"><label for="beginners-cakes-1"><img onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes.jpg"/></label><label for="beginners-cakes-2"><img onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes1.jpg"/></label><label for="beginners-cakes-3"><img onerror="this.src='images/placeholder.jpg'" src="images/beginners-cakes2.jpg"/></label></div></div>
+</div></div>
+<!-- ============ Decor (6) ============ -->
+<!-- בנטו -->
+<div class="modal" id="modal-bento-decor"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו</h3>
+<div class="modal-gallery">
+<input checked="checked" id="bento-decor-1" name="slider-bento-decor" type="radio"/><input id="bento-decor-2" name="slider-bento-decor" type="radio"/><input id="bento-decor-3" name="slider-bento-decor" type="radio"/><div class="big"><img alt="bento decor" onerror="this.src='images/placeholder.jpg'" src="images/bento-decor.jpg"/><img alt="bento decor 1" onerror="this.src='images/placeholder.jpg'" src="images/bento-decor1.jpg"/><img alt="bento decor 2" onerror="this.src='images/placeholder.jpg'" src="images/bento-decor2.jpg"/></div><div class="thumbs"><label for="bento-decor-1"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-decor.jpg"/></label><label for="bento-decor-2"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-decor1.jpg"/></label><label for="bento-decor-3"><img onerror="this.src='images/placeholder.jpg'" src="images/bento-decor2.jpg"/></label></div></div>
+</div></div>
+<!-- עוגות מיני -->
+<div class="modal" id="modal-mini-cakes"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות מיני</h3>
+<div class="modal-gallery">
+<input checked="checked" id="mini-cakes-1" name="slider-mini-cakes" type="radio"/><input id="mini-cakes-2" name="slider-mini-cakes" type="radio"/><input id="mini-cakes-3" name="slider-mini-cakes" type="radio"/><div class="big"><img alt="mini cakes" onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes.jpg"/><img alt="mini cakes 1" onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes1.jpg"/><img alt="mini cakes 2" onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes2.jpg"/></div><div class="thumbs"><label for="mini-cakes-1"><img onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes.jpg"/></label><label for="mini-cakes-2"><img onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes1.jpg"/></label><label for="mini-cakes-3"><img onerror="this.src='images/placeholder.jpg'" src="images/mini-cakes2.jpg"/></label></div></div>
+</div></div>
+<!-- עוגות גן -->
+<div class="modal" id="modal-garden-cakes"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות גן</h3>
+<div class="modal-gallery">
+<input checked="checked" id="garden-cakes-1" name="slider-garden-cakes" type="radio"/><input id="garden-cakes-2" name="slider-garden-cakes" type="radio"/><input id="garden-cakes-3" name="slider-garden-cakes" type="radio"/><div class="big"><img alt="garden cakes" onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes.jpg"/><img alt="garden cakes 1" onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes1.jpg"/><img alt="garden cakes 2" onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes2.jpg"/></div><div class="thumbs"><label for="garden-cakes-1"><img onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes.jpg"/></label><label for="garden-cakes-2"><img onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes1.jpg"/></label><label for="garden-cakes-3"><img onerror="this.src='images/placeholder.jpg'" src="images/garden-cakes2.jpg"/></label></div></div>
+</div></div>
+<!-- קומה 1 -->
+<div class="modal" id="modal-decor-1tier"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגה קומה 1</h3>
+<div class="modal-gallery">
+<input checked="checked" id="decor-1tier-1" name="slider-decor-1tier" type="radio"/><input id="decor-1tier-2" name="slider-decor-1tier" type="radio"/><input id="decor-1tier-3" name="slider-decor-1tier" type="radio"/><div class="big"><img alt="decor 1tier" onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier.jpg"/><img alt="decor 1tier 1" onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier1.jpg"/><img alt="decor 1tier 2" onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier2.jpg"/></div><div class="thumbs"><label for="decor-1tier-1"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier.jpg"/></label><label for="decor-1tier-2"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier1.jpg"/></label><label for="decor-1tier-3"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-1tier2.jpg"/></label></div></div>
+</div></div>
+<!-- קומה 2 -->
+<div class="modal" id="modal-decor-2tier"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגה 2 קומות</h3>
+<div class="modal-gallery">
+<input checked="checked" id="decor-2tier-1" name="slider-decor-2tier" type="radio"/><input id="decor-2tier-2" name="slider-decor-2tier" type="radio"/><input id="decor-2tier-3" name="slider-decor-2tier" type="radio"/><div class="big"><img alt="decor 2tier" onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier.jpg"/><img alt="decor 2tier 1" onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier1.jpg"/><img alt="decor 2tier 2" onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier2.jpg"/></div><div class="thumbs"><label for="decor-2tier-1"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier.jpg"/></label><label for="decor-2tier-2"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier1.jpg"/></label><label for="decor-2tier-3"><img onerror="this.src='images/placeholder.jpg'" src="images/decor-2tier2.jpg"/></label></div></div>
+</div></div>
+<!-- וינטג׳ -->
+<div class="modal" id="modal-vintage-cake"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>וינטג׳</h3>
+<div class="modal-gallery">
+<input checked="checked" id="vintage-cake-1" name="slider-vintage-cake" type="radio"/><input id="vintage-cake-2" name="slider-vintage-cake" type="radio"/><input id="vintage-cake-3" name="slider-vintage-cake" type="radio"/><div class="big"><img alt="vintage cake" onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake.jpg"/><img alt="vintage cake 1" onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake1.jpg"/><img alt="vintage cake 2" onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake2.jpg"/></div><div class="thumbs"><label for="vintage-cake-1"><img onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake.jpg"/></label><label for="vintage-cake-2"><img onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake1.jpg"/></label><label for="vintage-cake-3"><img onerror="this.src='images/placeholder.jpg'" src="images/vintage-cake2.jpg"/></label></div></div>
+</div></div>
+<!-- ============ Tarts (6) ============ -->
+<!-- טארט שוקולד -->
+<div class="modal" id="modal-tart-choco"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט שוקולד</h3>
+<div class="modal-gallery">
+<input checked="checked" id="tart-choco-1" name="slider-tart-choco" type="radio"/><input id="tart-choco-2" name="slider-tart-choco" type="radio"/><input id="tart-choco-3" name="slider-tart-choco" type="radio"/><div class="big"><img alt="tart choco" onerror="this.src='images/placeholder.jpg'" src="images/tart-choco.jpg"/><img alt="tart choco 1" onerror="this.src='images/placeholder.jpg'" src="images/tart-choco1.jpg"/><img alt="tart choco 2" onerror="this.src='images/placeholder.jpg'" src="images/tart-choco2.jpg"/></div><div class="thumbs"><label for="tart-choco-1"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-choco.jpg"/></label><label for="tart-choco-2"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-choco1.jpg"/></label><label for="tart-choco-3"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-choco2.jpg"/></label></div></div>
+</div></div>
+<!-- טארט פלאן -->
+<div class="modal" id="modal-tart-flan"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט פלאן</h3>
+<div class="modal-gallery">
+<input checked="checked" id="tart-flan-1" name="slider-tart-flan" type="radio"/><input id="tart-flan-2" name="slider-tart-flan" type="radio"/><input id="tart-flan-3" name="slider-tart-flan" type="radio"/><div class="big"><img alt="tart flan" onerror="this.src='images/placeholder.jpg'" src="images/tart-flan.jpg"/><img alt="tart flan 1" onerror="this.src='images/placeholder.jpg'" src="images/tart-flan1.jpg"/><img alt="tart flan 2" onerror="this.src='images/placeholder.jpg'" src="images/tart-flan2.jpg"/></div><div class="thumbs"><label for="tart-flan-1"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-flan.jpg"/></label><label for="tart-flan-2"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-flan1.jpg"/></label><label for="tart-flan-3"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-flan2.jpg"/></label></div></div>
+</div></div>
+<!-- טארט שקדים -->
+<div class="modal" id="modal-pie-almond"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט שקדים</h3>
+<div class="modal-gallery">
+<input checked="" id="g-almond-1" name="g-almond" type="radio"/>
+<input id="g-almond-2" name="g-almond" type="radio"/>
+<input id="g-almond-3" name="g-almond" type="radio"/>
+<div class="big">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim1.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim2.jpg"/>
+</div>
+<div class="thumbs">
+<label for="g-almond-1"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim.jpg"/></label>
+<label for="g-almond-2"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim1.jpg"/></label>
+<label for="g-almond-3"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/tart-shkedim2.jpg"/></label>
+</div>
+</div>
+</div></div>
+<!-- פאי פקאן -->
+<div class="modal" id="modal-pie-pecan"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>פאי פקאן</h3>
+<div class="modal-gallery">
+<input checked="checked" id="pie-pecan-1" name="slider-pie-pecan" type="radio"/><input id="pie-pecan-2" name="slider-pie-pecan" type="radio"/><input id="pie-pecan-3" name="slider-pie-pecan" type="radio"/><div class="big"><img alt="pie pecan" onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan.jpg"/><img alt="pie pecan 1" onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan1.jpg"/><img alt="pie pecan 2" onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan2.jpg"/></div><div class="thumbs"><label for="pie-pecan-1"><img onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan.jpg"/></label><label for="pie-pecan-2"><img onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan1.jpg"/></label><label for="pie-pecan-3"><img onerror="this.src='images/placeholder.jpg'" src="images/pie-pecan2.jpg"/></label></div></div>
+</div></div>
+<!-- טארט נואר -->
+<div class="modal" id="modal-tart-noir"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט נואר</h3>
+<div class="modal-gallery">
+<input checked="checked" id="tart-noir-1" name="slider-tart-noir" type="radio"/><input id="tart-noir-2" name="slider-tart-noir" type="radio"/><input id="tart-noir-3" name="slider-tart-noir" type="radio"/><div class="big"><img alt="tart noir" onerror="this.src='images/placeholder.jpg'" src="images/tart-noir.jpg"/><img alt="tart noir 1" onerror="this.src='images/placeholder.jpg'" src="images/tart-noir1.jpg"/><img alt="tart noir 2" onerror="this.src='images/placeholder.jpg'" src="images/tart-noir2.jpg"/></div><div class="thumbs"><label for="tart-noir-1"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-noir.jpg"/></label><label for="tart-noir-2"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-noir1.jpg"/></label><label for="tart-noir-3"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-noir2.jpg"/></label></div></div>
+</div></div>
+<!-- טארט לימון -->
+<div class="modal" id="modal-tart-lemon"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>טארט לימון</h3>
+<div class="modal-gallery">
+<input checked="checked" id="tart-lemon-1" name="slider-tart-lemon" type="radio"/><input id="tart-lemon-2" name="slider-tart-lemon" type="radio"/><input id="tart-lemon-3" name="slider-tart-lemon" type="radio"/><div class="big"><img alt="tart lemon" onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon.jpg"/><img alt="tart lemon 1" onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon1.jpg"/><img alt="tart lemon 2" onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon2.jpg"/></div><div class="thumbs"><label for="tart-lemon-1"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon.jpg"/></label><label for="tart-lemon-2"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon1.jpg"/></label><label for="tart-lemon-3"><img onerror="this.src='images/placeholder.jpg'" src="images/tart-lemon2.jpg"/></label></div></div>
+</div></div>
+<!-- ============ Cheese (4) ============ -->
+<!-- גבוה -->
+<div class="modal" id="modal-cheese-tall"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה גבוהה</h3>
+<div class="modal-gallery">
+<input checked="" id="g-tall-1" name="g-tall" type="radio"/>
+<input id="g-tall-2" name="g-tall" type="radio"/>
+<input id="g-tall-3" name="g-tall" type="radio"/>
+<div class="big">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall1.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall2.jpg"/>
+</div>
+<div class="thumbs">
+<label for="g-tall-1"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall.jpg"/></label>
+<label for="g-tall-2"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall1.jpg"/></label>
+<label for="g-tall-3"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-tall2.jpg"/></label>
+</div>
+</div>
+</div></div>
+<!-- בטעמים -->
+<div class="modal" id="modal-cheese-flavors"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה בטעמים</h3>
+<div class="modal-gallery">
+<input checked="checked" id="placeholder-1" name="slider-placeholder" type="radio"/><input id="placeholder-2" name="slider-placeholder" type="radio"/><input id="placeholder-3" name="slider-placeholder" type="radio"/><div class="big"><img alt="placeholder" onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors.jpg"/><img alt="placeholder 1" onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors1.jpg"/><img alt="placeholder 2" onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors2.jpg"/></div><div class="thumbs"><label for="placeholder-1"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors.jpg"/></label><label for="placeholder-2"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors1.jpg"/></label><label for="placeholder-3"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-flavors2.jpg"/></label></div></div>
+</div></div>
+<!-- פס גבינה -->
+<div class="modal" id="modal-cheese-loaf"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>פס גבינה</h3>
+<div class="modal-gallery">
+<input checked="" id="g-loaf-1" name="g-loaf" type="radio"/>
+<input id="g-loaf-2" name="g-loaf" type="radio"/>
+<input id="g-loaf-3" name="g-loaf" type="radio"/>
+<div class="big">
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf1.jpg"/>
+<img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf2.jpg"/>
+</div>
+<div class="thumbs">
+<label for="g-loaf-1"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf.jpg"/></label>
+<label for="g-loaf-2"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf1.jpg"/></label>
+<label for="g-loaf-3"><img alt="" onerror="this.src='images/placeholder.jpg'" src="images/cheese-loaf2.jpg"/></label>
+</div>
+</div>
+</div></div>
+<!-- קרה -->
+<div class="modal" id="modal-cheese-cold"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>גבינה קרה</h3>
+<div class="modal-gallery">
+<input checked="checked" id="placeholder-1" name="slider-placeholder" type="radio"/><input id="placeholder-2" name="slider-placeholder" type="radio"/><input id="placeholder-3" name="slider-placeholder" type="radio"/><div class="big"><img alt="placeholder" onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold.jpg"/><img alt="placeholder 1" onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold1.jpg"/><img alt="placeholder 2" onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold2.jpg"/></div><div class="thumbs"><label for="placeholder-1"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold.jpg"/></label><label for="placeholder-2"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold1.jpg"/></label><label for="placeholder-3"><img onerror="this.src='images/placeholder.jpg'" src="images/cheese-cold2.jpg"/></label></div></div>
+</div></div>
 </body>
 </html>
