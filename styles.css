@@ -41,7 +41,6 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .menu-section{padding-block:4rem;background:var(--clr-primary);}
 .menu-section h2{text-align:center;margin-bottom:2rem;font-size:2.4rem;}
 
-.tabs{max-width:1200px;margin-inline:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}
 .tabs::-webkit-scrollbar{display:none;}
 .tabs input{display:none;}
 .tabs label{cursor:pointer;padding:.6rem 1.4rem;border:2px solid var(--clr-accent);border-radius:var(--radius);font-weight:600;transition:.25s;}
@@ -49,16 +48,23 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .tab-content{display:none;width:100%;padding-top:2rem;}
 .tabs {
   display: flex;
-  flex-wrap: nowrap; /* חשוב כדי לא לשבור שורה */
-  overflow-x: auto;
+  flex-wrap: nowrap; /* מונע ירידה לשורה חדשה */
+  overflow-x: auto; /* מאפשר גלילה */
   white-space: nowrap;
   gap: .75rem;
   padding: 1rem;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
 }
 
-
+.tabs::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+}
+.tabs::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
 
 .tabs::-webkit-scrollbar {
   display: none;
