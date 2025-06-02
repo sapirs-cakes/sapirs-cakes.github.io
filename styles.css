@@ -47,6 +47,29 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .tabs label{cursor:pointer;padding:.6rem 1.4rem;border:2px solid var(--clr-accent);border-radius:var(--radius);font-weight:600;transition:.25s;}
 .tabs input:checked+label{background:var(--clr-accent);color:#fff;}
 .tab-content{display:none;width:100%;padding-top:2rem;}
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: .75rem;
+  padding: 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs label {
+  flex: 0 0 auto;
+  min-width: 110px;
+  text-align: center;
+}
+
+
+
+
 #tab-workshops:checked~#content-workshops,
 #tab-decor:checked~#content-decor,
 #tab-tarts:checked~#content-tarts,
@@ -57,7 +80,11 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .card{width:260px;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.08);transition:transform .25s;}
 .card:hover{transform:translateY(-4px);}
 .card a{color:inherit;text-decoration:none;}
-.card img{width:100%;height:220px;object-fit:cover;}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: fill;
+}
 .card figcaption{padding:1rem;text-align:center;}
 .card h4{margin:0 0 .4rem;font-size:1.08rem;font-weight:700;}
 .card .desc{margin:0;font-size:.9rem;color:#444;}
@@ -167,6 +194,11 @@ footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1re
 
   .about-text {
     text-align: center;
+  }
+  
+  .tabs {
+  justify-content: flex-start;
+  padding-inline: 1rem;
   }
 }
 
