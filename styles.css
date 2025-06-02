@@ -238,6 +238,15 @@ footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1re
     max-width: 300px;
     margin: 0 auto;
   }
+
+
+
+
+    .hero {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }
 
 .about-flex {
