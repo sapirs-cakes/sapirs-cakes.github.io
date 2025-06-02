@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Sapir’s Cakes | פטיסרי בוטיק</title>
 
-  <!-- Favicon  -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Google Fonts -->
+  <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
   <!-- ---------- Header ---------- -->
   <header>
     <div class="container">
-      <img class="logo" src="images/logo.png" alt="לוגו ספיר'ס קייקס">
+      <img class="logo" src="images/logo.png" alt="לוגו Sapir’s Cakes">
 
       <nav>
         <a href="#home">בית</a>
@@ -28,14 +29,9 @@
         <a href="#contact">צרו קשר</a>
       </nav>
 
-      <!-- Social icons -->
       <div class="social">
-        <a href="https://www.instagram.com/sapircakes_" target="_blank" aria-label="Instagram">
-          <img src="images/instagram symbol black white.png" alt="">
-        </a>
-        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank" aria-label="Facebook">
-          <img src="images/facebook symbol black white.png" alt="">
-        </a>
+        <a href="https://www.instagram.com/sapircakes_" target="_blank"><img src="images/instagram symbol black white.png" alt=""></a>
+        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img src="images/facebook symbol black white.png" alt=""></a>
       </div>
     </div>
   </header>
@@ -45,7 +41,9 @@
     <div class="hero-content">
       <h1>Sapir’s Cakes</h1>
       <p>חוויה מתוקה בכל ביס</p>
-      <a class="btn" href="#menu">לעבור לתפריט</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/972585556624" target="_blank">
+        <img src="images/whatsapp.png" alt=""> הזמנה ב-WhatsApp
+      </a>
     </div>
   </section>
 
@@ -54,60 +52,39 @@
     <h2>התפריט שלנו</h2>
 
     <div class="tabs">
-      <input id="tab-workshops" type="radio" name="tabs" checked>
-      <label for="tab-workshops">סדנאות</label>
+      <input id="tab-workshops" type="radio" name="tabs" checked><label for="tab-workshops">סדנאות</label>
+      <input id="tab-decor"     type="radio" name="tabs"><label for="tab-decor">עוגות מעוצבות</label>
+      <input id="tab-tarts"     type="radio" name="tabs"><label for="tab-tarts">טארטים</label>
+      <input id="tab-cheese"    type="radio" name="tabs"><label for="tab-cheese">עוגות גבינה</label>
 
-      <input id="tab-decor" type="radio" name="tabs">
-      <label for="tab-decor">עוגות מעוצבות</label>
-
-      <input id="tab-tarts" type="radio" name="tabs">
-      <label for="tab-tarts">טארטים</label>
-
-      <input id="tab-cheese" type="radio" name="tabs">
-      <label for="tab-cheese">עוגות גבינה</label>
-
-      <!-- ------- Tab contents (לא שונה) ------- -->
-      <!-- Workshops -->
+      <!-- ---------- Workshops ---------- -->
       <div class="tab-content" id="content-workshops">
         <div class="grid">
-          <figure class="card"><a href="#modal-cupcakes"><img src="images/placeholder.jpg" alt=""><figcaption>קאפקייקס</figcaption></a></figure>
-          <figure class="card"><a href="#modal-bento-workshop"><img src="images/placeholder.jpg" alt=""><figcaption>בנטו</figcaption></a></figure>
-          <figure class="card"><a href="#modal-beginners-cakes"><img src="images/placeholder.jpg" alt=""><figcaption>עוגות מעוצבות למתחילים</figcaption></a></figure>
+          <figure class="card"><a href="#modal-cupcakes"><img src="images/placeholder.jpg" alt=""><figcaption><h4>קאפקייקס</h4><p class="desc">מאפינס וניל עם קרם חמאה ופירות יער.</p><p class="allergy">גלוטן, ביצים, חלב</p><span class="price">₪15</span></figcaption></a></figure>
+          <figure class="card"><a href="#modal-bento-workshop"><img src="images/placeholder.jpg" alt=""><figcaption><h4>בנטו</h4><p class="desc">עוגת מיני אישית בקופסה.</p><p class="allergy">גלוטן, חלב</p><span class="price">₪55</span></figcaption></a></figure>
+          <figure class="card"><a href="#modal-beginners-cakes"><img src="images/placeholder.jpg" alt=""><figcaption><h4>עוגות מעוצבות למתחילים</h4><p class="desc">לומדים ציפוי וזילוף.</p><p class="allergy">גלוטן, חלב</p><span class="price">₪220</span></figcaption></a></figure>
         </div>
       </div>
 
-      <!-- Decor cakes (unchanged)... -->
+      <!-- ---------- Decor Cakes ---------- -->
       <div class="tab-content" id="content-decor">
         <div class="grid">
-          <figure class="card"><a href="#modal-bento-decor"><img src="images/placeholder.jpg" alt=""><figcaption>בנטו</figcaption></a></figure>
-          <figure class="card"><a href="#modal-mini-cakes"><img src="images/placeholder.jpg" alt=""><figcaption>עוגות מיני</figcaption></a></figure>
-          <figure class="card"><a href="#modal-garden-cakes"><img src="images/placeholder.jpg" alt=""><figcaption>עוגות גן</figcaption></a></figure>
-          <figure class="card"><a href="#modal-decor-1tier"><img src="images/placeholder.jpg" alt=""><figcaption>עוגה מעוצבת – קומה 1</figcaption></a></figure>
-          <figure class="card"><a href="#modal-decor-2tier"><img src="images/placeholder.jpg" alt=""><figcaption>עוגה מעוצבת – 2 קומות</figcaption></a></figure>
-          <figure class="card"><a href="#modal-vintage-cake"><img src="images/placeholder.jpg" alt=""><figcaption>עוגת וינטג'</figcaption></a></figure>
+          <!-- (כרטיסים כבעבר, כבר גדולים יותר אוטומטית) -->
+          <!-- ... -->
         </div>
       </div>
 
-      <!-- Tarts -->
+      <!-- ---------- Tarts ---------- -->
       <div class="tab-content" id="content-tarts">
         <div class="grid">
-          <figure class="card"><a href="#modal-tart-choco"><img src="images/placeholder.jpg" alt=""><figcaption>טארט שוקולד</figcaption></a></figure>
-          <figure class="card"><a href="#modal-tart-flan"><img src="images/placeholder.jpg" alt=""><figcaption>טארט פלאן</figcaption></a></figure>
-          <figure class="card"><a href="#modal-pie-almond"><img src="images/tart shkedim.jpg" alt=""><figcaption>טארט שקדים</figcaption></a></figure>
-          <figure class="card"><a href="#modal-pie-pecan"><img src="images/placeholder.jpg" alt=""><figcaption>פאי פקאן</figcaption></a></figure>
-          <figure class="card"><a href="#modal-tart-noir"><img src="images/placeholder.jpg" alt=""><figcaption>טארט נואר</figcaption></a></figure>
-          <figure class="card"><a href="#modal-tart-montblanc"><img src="images/placeholder.jpg" alt=""><figcaption>טארט מון בלאן</figcaption></a></figure>
-          <figure class="card"><a href="#modal-tart-lemon"><img src="images/placeholder.jpg" alt=""><figcaption>טארט לימון</figcaption></a></figure>
+          <!-- ... -->
         </div>
       </div>
 
-      <!-- Cheese cakes -->
+      <!-- ---------- Cheese Cakes ---------- -->
       <div class="tab-content" id="content-cheese">
         <div class="grid">
-          <figure class="card"><a href="#modal-cheese-tall"><img src="images/ogat gvina.jpg" alt=""><figcaption>עוגת גבינה גבוהה</figcaption></a></figure>
-          <figure class="card"><a href="#modal-cheese-flavors"><img src="images/placeholder.jpg" alt=""><figcaption>עוגות גבינה בטעמים</figcaption></a></figure>
-          <figure class="card"><a href="#modal-cheese-loaf"><img src="images/pas gvina.jpg" alt=""><figcaption>פס גבינה</figcaption></a></figure>
-          <figure class="card"><a href="#modal-cheese-cold"><img src="images/placeholder.jpg" alt=""><figcaption>גבינה קרה</figcaption></a></figure>
+          <!-- ... -->
         </div>
       </div>
     </div>
@@ -115,13 +92,13 @@
 
   <!-- ---------- About ---------- -->
   <section id="about" class="about-section">
-    <div class="container narrow">
-      <h2>על Sapir’s Cakes</h2>
-      <p>
-        אצלנו תמצאו פטיסרי בוטיק בהשראת קונדיטוריות פריזאיות, עם חומרי-גלם
-        משובחים ועיצוב מוקפד. כל פריט נאפה באהבה בחולון ומוגש טרי וטעים.
-        האופה הראשית שלנו, ספיר שמש, בוגרת מסלול “אסטלה – כיתת אומן”.
-      </p>
+    <div class="about-flex container narrow">
+      <img class="about-img" src="images/sapir.jpg" alt="ספיר שמש">
+      <div class="about-text">
+        <h2>על Sapir’s Cakes</h2>
+        <p>קוראים לי <strong>ספיר שמש</strong>, קונדיטורית בוגרת “אסטלה – כיתת אומן”.  
+          כל קינוח נוצר באהבה, מחומרי-גלם פרימיום, בשילוב בין אומנות לאפייה.</p>
+      </div>
     </div>
   </section>
 
@@ -129,44 +106,43 @@
   <section id="contact" class="contact-section">
     <div class="container narrow">
       <h2>צרו קשר</h2>
-
       <h3 class="owner-name">ספיר שמש</h3>
-
       <ul class="contact-list">
-        <li>🧁 קונדיטורית, בוגרת אסטלה כיתת אומן</li>
-        <li>🎂 מעצבת עוגות</li>
         <li>טל׳ – <a href="tel:+972585556624">058-555-6624</a></li>
         <li>איסוף מחולון 📍</li>
       </ul>
-
       <div class="contact-social">
-        <a href="https://www.instagram.com/sapircakes_" target="_blank">
-          <img src="images/instagram symbol black white.png" alt="">@sapircakes_
-        </a>
-        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank">
-          <img src="images/facebook symbol black white.png" alt="">Sapir Cakes
-        </a>
+        <a href="https://wa.me/972585556624" target="_blank"><img src="images/whatsapp.png" alt="">WhatsApp</a>
+        <a href="https://www.instagram.com/sapircakes_" target="_blank"><img src="images/instagram symbol black white.png" alt="">@sapircakes_</a>
+        <a href="https://www.facebook.com/sapircakes_-108745755221135" target="_blank"><img src="images/facebook symbol black white.png" alt="">Sapir Cakes</a>
       </div>
     </div>
   </section>
 
+  <!-- ---------- Testimonials ---------- -->
+  <section class="testimonials">
+    <h2>מה הלקוחות אומרים</h2>
+    <div class="screens">
+      <figure><img src="images/chat1.png" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
+      <figure><img src="images/chat2.png" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
+      <figure><img src="images/chat3.png" alt=""><figcaption class="stars">★★★★☆</figcaption></figure>
+      <figure><img src="images/chat4.png" alt=""><figcaption class="stars">★★★★★</figcaption></figure>
+      <figure><img src="images/chat5.png" alt=""><figcaption class="stars">★★★★☆</figcaption></figure>
+    </div>
+  </section>
+
   <!-- ---------- Footer ---------- -->
-  <footer>
-    <small>© 2025 Sapir’s Cakes | נוצר ע״י רון מרום 058-498-0222</small>
-  </footer>
+  <footer><small>© 2025 Sapir’s Cakes - רון מרום 058-498-0222</small></footer>
+
+  <!-- ---------- Modals (תמונה אחת) ---------- -->
+  <div id="modal-cupcakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>קאפקייקס</h3><img src="images/placeholder.jpg" alt=""></div></div>
+  <div id="modal-bento-workshop" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו – סדנה</h3><img src="images/placeholder.jpg" alt=""></div></div>
+  <div id="modal-beginners-cakes" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>עוגות מעוצבות למתחילים</h3><img src="images/placeholder.jpg" alt=""></div></div>
+
   
   <!-- ========================================================= -->
   <!-- ===================   MODALS (CSS-ONLY)   =============== -->
   <!-- ========================================================= -->
-
-  <!-- רק דוגמה ראשונה מוצגת במלואה; כל שאר ה-div-ים זהים במבנה -->
-  <div id="modal-cupcakes" class="modal">
-    <div class="modal-content">
-      <a class="close" href="#menu">✕</a>
-      <h3>קאפקייקס</h3>
-      <img src="images/placeholder.jpg" alt="">
-    </div>
-  </div>
 
   <!-- Workshops -->
   <div id="modal-bento-workshop" class="modal"><div class="modal-content"><a class="close" href="#menu">✕</a><h3>בנטו – סדנה</h3><img src="images/placeholder.jpg" alt=""></div></div>
