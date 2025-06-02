@@ -115,13 +115,61 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1rem;font-size:1.3rem;}
 
 /* ---------- Responsive ---------- */
-@media(max-width:600px){
-  nav{flex-wrap:wrap;justify-content:center;row-gap:.25rem;}nav a{margin-inline:.3rem;font-size:.8rem;}
-  .logo{height:70px;} .social img{width:24px;height:24px;}
-  .hero p{font-size:.95rem;} .tabs label{padding:.35rem .8rem;font-size:.8rem;}
-  .card{width:170px;} .card img{height:150px;}
-  .screens img{width:140px;} .modal-gallery .thumbs img{width:60px;height:45px;}
+@media(max-width:600px) {
+  header {
+    padding-block: 0.3rem;
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
+  }
+
+  nav a {
+    font-size: 0.75rem;
+    margin-inline: 0.4rem;
+  }
+
+  .social img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* התאמה ל"אודות" בטלפון */
+  .about-flex {
+    flex-direction: column-reverse; /* תמונה למעלה, טקסט מתחת */
+    text-align: center;
+  }
+
+  .about-img-wrapper {
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
 }
+
 .about-flex {
   display: flex;
   flex-direction: row-reverse; /* Image on the left, text on the right */
