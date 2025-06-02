@@ -18,6 +18,7 @@ body{
   color:var(--clr-dark);
   background:var(--clr-light);
   line-height:1.6;
+  overflow-x:hidden;
 }
 img{max-width:100%;display:block;}
 
@@ -37,73 +38,48 @@ header{
   box-shadow:0 2px 4px rgba(0,0,0,.05);
   padding-block:.4rem;
 }
-
 .logo{height:90px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.12));}
 
-nav a{
-  margin-inline:.75rem;
-  text-decoration:none;
-  color:var(--clr-dark);
-  font-weight:600;
-  transition:color .25s;
+/* --- NAV --- */
+nav{
+  display:flex;
+  overflow-x:auto;
+  white-space:nowrap;
+  scrollbar-width:none;
 }
+nav::-webkit-scrollbar{display:none;}
+nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weight:600;transition:color .25s;}
 nav a:hover{color:var(--clr-accent);}
 
 /* Social icons */
 .social{display:flex;align-items:center;gap:.75rem;}
 .social img{width:40px;height:40px;object-fit:contain;filter:grayscale(1);}
 
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 2rem;border-radius:9999px;font-weight:600;text-decoration:none;transition:opacity .25s;}
+.btn:hover{opacity:.9;}
+.btn-whatsapp{background:#25D366;color:#fff;}
+.btn-whatsapp img{width:20px;height:20px;}
+
 /* ---------- Hero ---------- */
-.hero{
-  height:80vh;
-  background:url("images/hero.jpg") center/cover no-repeat;
-  display:grid;
-  place-items:center;
-  text-align:center;
-  color:var(--clr-light);
-  position:relative;
-}
+.hero{height:80vh;background:url("images/hero.jpg") center/cover no-repeat;display:grid;place-items:center;text-align:center;color:#fff;position:relative;}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45);}
 .hero-content{position:relative;z-index:1;}
 .hero h1{font-size:clamp(2.6rem,5vw+1rem,4.2rem);margin:0;}
 .hero p{font-size:1.3rem;margin-block:.5rem 1.75rem;}
-
-.btn{
-  display:inline-block;
-  padding:.75rem 2.6rem;
-  background:var(--clr-accent);
-  color:var(--clr-light);
-  border-radius:9999px;
-  font-weight:600;
-  text-decoration:none;
-  transition:opacity .25s;
-}
-.btn:hover{opacity:.9;}
 
 /* ---------- Tabs ---------- */
 .menu-section{padding-block:4rem;background:var(--clr-primary);}
 .menu-section h2{text-align:center;margin-bottom:2rem;font-size:2.4rem;}
 
 .tabs{
-  max-width:1200px;
-  margin-inline:auto;
-  padding-inline:1rem;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:.75rem;
+  max-width:1200px;margin-inline:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none;
 }
-.tabs input[type="radio"]{display:none;}
-.tabs label{
-  cursor:pointer;
-  padding:.6rem 1.4rem;
-  border:2px solid var(--clr-accent);
-  border-radius:var(--radius);
-  font-weight:600;
-  transition:background .25s,color .25s;
-}
-.tabs input:checked+label{background:var(--clr-accent);color:var(--clr-light);}
-.tab-content{display:none;padding-top:2rem;}
+.tabs::-webkit-scrollbar{display:none;}
+.tabs input{display:none;}
+.tabs label{cursor:pointer;padding:.6rem 1.4rem;border:2px solid var(--clr-accent);border-radius:var(--radius);font-weight:600;transition:.25s;}
+.tabs input:checked+label{background:var(--clr-accent);color:#fff;}
+.tab-content{display:none;width:100%;padding-top:2rem;}
 #tab-workshops:checked~#content-workshops,
 #tab-decor:checked~#content-decor,
 #tab-tarts:checked~#content-tarts,
@@ -111,94 +87,66 @@ nav a:hover{color:var(--clr-accent);}
 
 /* ---------- Cards ---------- */
 .grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;}
-
-.card{
-  width:210px;
-  background:var(--clr-light);
-  border-radius:var(--radius);
-  overflow:hidden;
-  box-shadow:0 2px 6px rgba(0,0,0,.08);
-  transition:transform .25s;
-}
+.card{width:260px;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.08);transition:transform .25s;}
 .card:hover{transform:translateY(-4px);}
-.card a{display:block;text-decoration:none;color:inherit;}
-.card img{width:100%;height:180px;object-fit:cover;}
-.card figcaption{padding:1rem;text-align:center;font-weight:500;line-height:1.4;}
+.card img{width:100%;height:220px;object-fit:cover;}
+.card figcaption{padding:1rem;text-align:center;}
+.card h4{margin:0 0 .4rem;font-size:1.08rem;}
+.card .desc{margin:0;font-size:.9rem;color:#444;}
+.card .allergy{margin:.3rem 0;font-size:.75rem;color:#a00;}
+.card .price{display:block;margin-top:.4rem;font-size:1.15rem;font-weight:700;color:var(--clr-accent);}
 
-/* ---------- About & Contact ---------- */
-.about-section,
-.contact-section{padding-block:4rem;}
-.contact-section{background:var(--clr-primary);}
+/* ---------- About ---------- */
+.about-section{padding-block:4rem;}
+.about-flex{display:flex;gap:2rem;align-items:center;}
+.about-img{flex:0 0 260px;border-radius:var(--radius);box-shadow:0 2px 6px rgba(0,0,0,.1);}
+.about-text{flex:1 1 0;}
 
-/* contact formatting */
+/* ---------- Contact ---------- */
+.contact-section{background:var(--clr-primary);padding-block:4rem;}
 .owner-name{margin-top:0;}
 .contact-list{list-style:none;padding:0;margin:0 0 1rem;}
 .contact-list li{margin-bottom:.25rem;}
+.contact-social{display:flex;flex-direction:column;gap:.5rem;}
+.contact-social a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--clr-dark);}
+.contact-social img{width:30px;height:30px;filter:grayscale(1);}
 
-.contact-social{
-  display:flex;
-  flex-direction:column;
-  gap:.5rem;
-}
-.contact-social a{
-  display:inline-flex;
-  align-items:center;
-  gap:.4rem;
-  text-decoration:none;
-  color:var(--clr-dark);
-}
-.contact-social img{width:30px;height:30px;object-fit:contain;filter:grayscale(1);}
-
-/* ---------- Footer ---------- */
-footer{
-  background:var(--clr-dark);
-  color:var(--clr-light);
-  text-align:center;
-  padding-block:1rem;
-  font-size:.875rem;
-}
+/* ---------- Testimonials ---------- */
+.testimonials{padding-block:4rem;}
+.testimonials h2{text-align:center;margin-bottom:2rem;}
+.screens{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.screens figure{margin:0;text-align:center;}
+.screens img{width:180px;border-radius:var(--radius);box-shadow:0 2px 6px rgba(0,0,0,.12);}
+.stars{margin-top:.3rem;font-size:1.1rem;color:#ffb703;}
 
 /* ---------- Modal ---------- */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;z-index:1000;}
-.modal-content{
-  max-width:90%;max-height:90vh;
-  background:var(--clr-light);
-  border-radius:var(--radius);
-  padding:1.5rem;
-  text-align:center;
-  overflow:hidden;
-  display:flex;flex-direction:column;align-items:center;
-  transform:scale(.8);transition:transform .3s ease,opacity .3s ease;opacity:0;
-  position:relative;
-}
-.modal-content h3{margin:0 0 1rem;font-size:1.4rem;}
-.modal-content img{max-height:80vh;object-fit:contain;width:auto;}
-.close{position:absolute;top:.7rem;left:.7rem;font-size:2rem;text-decoration:none;color:var(--clr-dark);}
+.modal-content{max-width:90%;max-height:90vh;background:#fff;border-radius:var(--radius);padding:1.5rem;text-align:center;overflow:hidden;display:flex;flex-direction:column;align-items:center;transform:scale(.8);transition:.3s ease;opacity:0;position:relative;}
 .modal:target{display:flex;}
 .modal:target .modal-content{transform:scale(1);opacity:1;}
+.modal-content h3{margin:0 0 1rem;font-size:1.4rem;}
+.modal-content img{max-height:80vh;object-fit:contain;width:auto;}
+.close{position:absolute;top:.6rem;left:.6rem;font-size:2rem;text-decoration:none;color:var(--clr-dark);}
+
+/* ---------- Footer ---------- */
+footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1rem;font-size:.875rem;}
 
 /* ---------- Responsive ---------- */
 @media(max-width:600px){
-  /* ניווט מתקפל למספר שורות */
-  nav{
-    flex-wrap:wrap;           /* אם אין מקום – יורד שורה */
-    justify-content:center;
-    row-gap:.25rem;
-  }
-  nav a{
-    margin-inline:.3rem;
-    font-size:.8rem;
-  }
+  nav{flex-wrap:wrap;justify-content:center;row-gap:.25rem;}
+  nav a{margin-inline:.3rem;font-size:.8rem;}
 
-  /* לוגו ואייקונים מוקטנים */
   .logo{height:70px;}
   .social img{width:24px;height:24px;}
 
-  /* כותרת וגופנים מעט קטנים יותר */
   .hero p{font-size:.95rem;}
-
-  /* כפתורי הטאב והכרטיסים */
   .tabs label{padding:.35rem .8rem;font-size:.8rem;}
-  .card{width:150px;}
-}
 
+  .card{width:170px;}
+  .card img{height:150px;}
+
+  .about-flex{flex-direction:column;text-align:center;}
+  .about-img{width:200px;}
+
+  .screens img{width:140px;}
+}
