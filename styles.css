@@ -19,7 +19,7 @@ img{max-width:100%;display:block;}
 .container{width:min(90%,1100px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;}
 .container.narrow{width:min(90%,800px);display:block;}
 header{position:sticky;top:0;z-index:999;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);padding-block:.4rem;}
-.logo{height:90px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.12));}
+.logo{width:120px;height:80px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.12));}
 
 nav{display:flex;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}nav::-webkit-scrollbar{display:none;}
 nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weight:600;transition:color .25s;}nav a:hover{color:var(--clr-accent);}
