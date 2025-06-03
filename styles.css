@@ -38,7 +38,11 @@ nav a{margin-inline:.75rem;text-decoration:none;color:var(--clr-dark);font-weigh
 .hero-content{position:relative;z-index:1;}
 .hero h1{font-size:clamp(2.6rem,5vw+1rem,4.2rem);margin:0;}
 .hero p{font-size:1.3rem;margin-block:.5rem 1.75rem;}
-
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 /* ---------- Tabs ---------- */
 .menu-section{padding-block:4rem;background:var(--clr-primary);}
 .menu-section h2{text-align:center;margin-bottom:2rem;font-size:2.4rem;}
@@ -199,8 +203,8 @@ footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1re
   }
   
   .tabs {
-    justify-content: center;
-    padding-inline: 0;
+	justify-content: center;
+	padding-inline: 0;
   }
   
   .tabs label {
@@ -238,14 +242,27 @@ footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1re
     max-width: 300px;
     margin: 0 auto;
   }
-
-
-
-
+  
+  
+  
+  
     .hero {
-    background-size: contain;
+    height: 60vh; /* היה 80vh – עכשיו יותר קומפקטי */
+    background-size: cover;
     background-position: center top;
-    background-repeat: no-repeat;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem; /* קטן יותר שיתאים לגובה */
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn-whatsapp {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
