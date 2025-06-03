@@ -220,7 +220,7 @@ footer{background:var(--clr-dark);color:#fff;text-align:center;padding-block:1re
   
   .tabs label {
     padding: 0.20rem 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     min-width: auto;
     border-width: 1px;
   }
