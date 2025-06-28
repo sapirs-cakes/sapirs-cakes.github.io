@@ -189,8 +189,21 @@ nav a:hover{color:var(--clr-accent);}
   line-clamp:2;            /* FF */
   white-space:normal;      /* ודואג ש־<br> לא ישבור את הכלי */
 }
+/* ---------- Clamp allergens in cards ---------- */
+.card .allergy{
+  margin:.3rem 0;
+  font-size:.75rem;
+  color:#a00;
+  overflow:hidden;        /* חוסם גלישה */
+  text-overflow:ellipsis; /* מוסיף … בדפדפנים ישנים */
+  white-space:normal;     /* מאפשר שורות מרובות */
 
-.card .allergy{margin:.3rem 0;font-size:.75rem;color:#a00;}
+  /* בדפדפני WebKit + Firefox החדשים */
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;   /* שורה אחת בלבד – שנה ל-2 אם רוצים יותר */
+  line-clamp:1;           /* תמיכה חלקית בפיירפוקס */
+}
 
 .card .price{
   display:block;
